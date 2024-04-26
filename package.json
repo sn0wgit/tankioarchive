@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sn0wgit.github.io/tankioarchive",
+  "homepage": "https://sn0wgit.github.io/tankioarchive/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d dist",     
