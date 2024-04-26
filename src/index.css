@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+@font-face {font-family: "Next Art"; font-weight: 700; src:url("https://sn0wgit.github.io/tankionlinearchive/resources/NEXT%20ART_Heavy.otf") format("opentype");}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+#root{
+  display: contents;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    position: fixed;
+    height: 61px;
+    width: 100%;
+    padding: 8px 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    user-select: none;
+}
+header a{
+    font: 400 32px 'IBM Plex Mono';
+    text-decoration: underline 3px #000;
+    color: #000;
+    cursor: pointer;
+}
+header a.mini-logo {
+    font-family: 'Next Art';
+    text-decoration: unset;
+}
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 30px;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+img[alt]{font-family: 'IBM Plex Mono';}
+.big-logo{
+    max-width: 100%;
+}
+center{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 305px;
+}
+center h1 {
+    font-family: 'Next Art';
+    font-size: 58px;
+    margin: 0;
+}
+span.desc {
+    color: #000;
+    font-size: 30px;
+}
+h2 {
+    max-width: 855px;
+    font: 400 30px 'IBM Plex Mono';
+}
+b {
+    font: 500 39px 'IBM Plex Mono';
+}
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 26px 16px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    background: #c1dbf2;
+    width: 252px;
+    height: 216px;
+    border-radius: 30px;
+    text-decoration: unset;
+    transition: all ease-in-out 0.15s;
+    text-align: center;
+}
+.card:hover{
+    background: #a1c8eb;
+    border-radius: 46px;
+}
+.card span{
+    color: #4491d7;
+    font: 400 24px 'IBM Plex Mono';
+    transition: all ease-in-out 0.15s;
+}
+.flower{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://sn0wgit.github.io/tankionlinearchive/resources/flower.svg') center / cover no-repeat;
+    width: 82px;
+    height: 82px;
+    animation: 8s linear 0s infinite paused flower-rotation;
+}
+.card:hover .flower{animation-play-state: running;}
+@keyframes flower-rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.card:hover span{
+    color: #fff;
+    user-select: none;
+}
+.card img {
+    animation: 8s linear 0s infinite paused flower-inner-rotation;
+    width: 30px;
+}
+.card:hover img {animation-play-state: running;}
+@keyframes flower-inner-rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@media (orientation: portrait){
+    main{margin: 15px;}
+    h2{font-size: 26px;}
+    b{font-size: 33.8px;}
+}
+@media screen and (max-width: 1060px){
+    .cards{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, calc(100% / 3 - 11px));
+        width: 100%;
+    }
+    .card{
+        width: auto;
+        aspect-ratio: unset;
+    }
+}
+@media screen and (max-width: 832px){
+    .cards{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(2, calc(50% - 8px));
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .cards{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+}
