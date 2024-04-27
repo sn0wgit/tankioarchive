@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tankioarchive/static/css/main.fa944051.css",
+    "main.js": "/tankioarchive/static/js/main.8bcf97bb.js",
+    "index.html": "/tankioarchive/index.html",
+    "main.fa944051.css.map": "/tankioarchive/static/css/main.fa944051.css.map",
+    "main.8bcf97bb.js.map": "/tankioarchive/static/js/main.8bcf97bb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa944051.css",
+    "static/js/main.8bcf97bb.js"
+  ]
+}
