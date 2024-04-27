@@ -1,15 +1,20 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
 import Explorer from './explorer.jsx'
 import './App.css'
-import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-  <main class="explorer">
-    <iframe class="preview" name="preview"></iframe>
-    <hr></hr>
-    <Explorer />
-  </main>
-  </React.StrictMode>
-);
+function App() {
+  let prev = "Item preview"
+  let agentlanguage = navigator.language
+  if (agentlanguage.indexOf('ru') > -1) {
+    prev = "Предпросмотр предмета"
+  }
+  return(
+    <main class="explorer">
+      <iframe class="preview" name="preview" title={prev}></iframe>
+      <hr></hr>
+      <Explorer />
+    </main>
+  )
+}
+
+export default App

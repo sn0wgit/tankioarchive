@@ -1,4 +1,5 @@
 import Breadcrumb from './breadcrumb.jsx'
+import './App.css'
 
 function Explorer() {
     let explorerName = "Name"
