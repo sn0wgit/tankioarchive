@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tankioarchive/static/css/main.fa944051.css",
-    "main.js": "/tankioarchive/static/js/main.f5334998.js",
+    "main.js": "/tankioarchive/static/js/main.ca91a80f.js",
     "index.html": "/tankioarchive/index.html",
     "main.fa944051.css.map": "/tankioarchive/static/css/main.fa944051.css.map",
-    "main.f5334998.js.map": "/tankioarchive/static/js/main.f5334998.js.map"
+    "main.ca91a80f.js.map": "/tankioarchive/static/js/main.ca91a80f.js.map"
   },
   "entrypoints": [
     "static/css/main.fa944051.css",
-    "static/js/main.f5334998.js"
+    "static/js/main.ca91a80f.js"
   ]
 }
