@@ -1,170 +1,175 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap');
-@font-face {font-family: "Next Art"; font-weight: 700; src:url("https://sn0wgit.github.io/tankionlinearchive/resources/NEXT%20ART_Heavy.otf") format("opentype");}
-html, body {
-    width: 100%;
-    height: 100%;
-}
-
+@font-face {font-family: "Next Art"; font-weight: 700; src:url("NEXT ART_Heavy.otf") format("opentype");}
 body {
-    display: flex;
-    margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  background-color: #f8fafd;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  color: #1f1f1f;
 }
 
-#root{
-  display: contents;
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: 0.125rem solid currentColor;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
-    position: fixed;
-    height: 61px;
-    width: 100%;
-    padding: 8px 20px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #000;
-    user-select: none;
+header * {
+  display: flex;
+  height: fit-content;
+  font: 400 2em/1 "IBM Plex Mono";
+  border: 0;
+  background: 0;
+  cursor: pointer;
+  color: #1f1f1f;
+  padding: 0;
+  text-decoration: 0.175rem underline currentColor;
 }
-header a{
-    font: 400 32px 'IBM Plex Mono';
-    text-decoration: underline 3px #000;
-    color: #000;
-    cursor: pointer;
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-header a.mini-logo {
-    font-family: 'Next Art';
-    text-decoration: unset;
+
+section.intro{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
 }
-main{
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 30px;
-    width: 100%;
-    height: calc(100% - 60px);
+
+h1.logo{
+  font-family: 'Next Art';
+  margin-block: 0;
+  text-align: center;
+  font-size: 3em;
 }
-img[alt]{font-family: 'IBM Plex Mono';}
-.big-logo{
-    max-width: 100%;
+
+h2.desc{
+  font: 400 2em 'IBM Plex Mono';
+  text-align: center;
+  margin-block: 0;
 }
-center{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    height: 305px;
+
+section.intro p {
+  max-width: 855px;
+  font: 400 1.75em 'IBM Plex Mono';
+  margin-right: auto;
 }
-center h1 {
-    font-family: 'Next Art';
-    font-size: 58px;
-    margin: 0;
-}
-span.desc {
-    color: #000;
-    font-size: 30px;
-}
-h2 {
-    max-width: 855px;
-    font: 400 30px 'IBM Plex Mono';
-}
-b {
-    font: 500 39px 'IBM Plex Mono';
-}
-.cards{
-    display: flex;
-    flex-flow: row wrap;
-    gap: 26px 16px;
-}
-.card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-    background: #c1dbf2;
-    width: 252px;
-    height: 216px;
-    border-radius: 30px;
-    text-decoration: unset;
-    transition: all ease-in-out 0.15s;
-    text-align: center;
-}
-.card:hover{
-    background: #a1c8eb;
-    border-radius: 46px;
-}
-.card span{
-    color: #4491d7;
-    font: 400 24px 'IBM Plex Mono';
-    transition: all ease-in-out 0.15s;
-}
-.flower{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('https://sn0wgit.github.io/tankionlinearchive/resources/flower.svg') center / cover no-repeat;
-    width: 82px;
-    height: 82px;
-    animation: 8s linear 0s infinite paused flower-rotation;
-}
-.card:hover .flower{animation-play-state: running;}
-@keyframes flower-rotation{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-.card:hover span{
-    color: #fff;
-    user-select: none;
-}
-.card img {
-    animation: 8s linear 0s infinite paused flower-inner-rotation;
-    width: 30px;
-}
-.card:hover img {animation-play-state: running;}
-@keyframes flower-inner-rotation{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(-360deg);
-    }
-}
+
 @media (orientation: portrait){
-    main{margin: 15px;}
-    h2{font-size: 26px;}
-    b{font-size: 33.8px;}
-}
-@media screen and (max-width: 1060px){
-    .cards{
-        display: grid;
-        grid-auto-flow: row;
-        grid-template-columns: repeat(3, calc(100% / 3 - 11px));
-        width: 100%;
-    }
-    .card{
-        width: auto;
-        aspect-ratio: unset;
-    }
-}
-@media screen and (max-width: 832px){
-    .cards{
-        display: grid;
-        grid-auto-flow: row;
-        grid-template-columns: repeat(2, calc(50% - 8px));
-        width: 100%;
-    }
+  section.intro {
+    margin-left: 1.5em;
+  }
 }
 
-@media screen and (max-width: 570px){
-    .cards{
-        display: grid;
-        grid-auto-flow: row;
-        grid-template-columns: 100%;
-        width: 100%;
-    }
+section.intro p b {
+  font: 500 1.25em 'IBM Plex Mono';
+}
+
+.cards{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 26px 16px;
+  margin-right: auto;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  background: #c1dbf2;
+  width: 252px;
+  height: 216px;
+  border-radius: 30px;
+  text-decoration: unset;
+  transition: all ease-in-out 0.15s;
+  text-align: center;
+}
+
+.card:hover{
+  background: #a1c8eb;
+  border-radius: 46px;
+  cursor: pointer;
+}
+
+.card-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80' fill='none'%3E%3Cpath d='M77.1461 39.9994C83.6068 52.0411 78.7255 62.9426 66.2666 66.2653C62.9426 78.7255 52.0411 83.6055 39.9994 77.1461C27.9577 83.6068 17.0561 78.7255 13.7334 66.2666C1.27453 62.9426 -3.60675 52.0411 2.85391 39.9994C-3.60675 27.9577 1.27453 17.0561 13.7334 13.7334C17.0561 1.27453 27.9577 -3.60675 39.9994 2.85391C52.0411 -3.60675 62.9426 1.27453 66.2653 13.7334C78.7255 17.0561 83.6055 27.9577 77.1461 39.9994Z' fill='white'/%3E%3C/svg%3E") center / cover no-repeat;
+  width: 82px;
+  height: 82px;
+  animation: 8s linear 0s infinite paused flower-rotation;
+}
+
+@keyframes flower-rotation{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+.card span{
+  color: #4491d7;
+  font: 400 24px 'IBM Plex Mono';
+  transition: all ease-in-out 0.15s;
+}
+
+.card:hover span{
+  color: #fff;
+  user-select: none;
+}
+
+.card-img::before {
+  content: '';
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  animation: 8s linear 0s infinite paused flower-inner-rotation;
+  width: 2em;
+  height: 2em;
+}
+
+.card:hover .card-img,
+.card:hover .card-img::before {
+  animation-play-state: running;
+}
+
+.card-img__tnk::before{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.2' viewBox='0 0 16 11' width='16' height='11'%3E%3Cpath d='m2 1l1-1h4l1 1h8v2h-10v1h4l2 2h3l1 1v2l-2 2h-12l-2-2v-3l2-2z' fill='%234491d7'/%3E%3C/svg%3E");
+}
+
+.card-img__tar::before{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.2' viewBox='0 0 44 18' width='44' height='18'%3E%3Cpath d='m12.6 17h-4.8q-1.4 0-2.1-0.8-0.6-0.8-0.6-2v-8h-4.2v-1.6h3.1q0.6 0 0.9-0.2 0.2-0.3 0.2-0.9v-3.3h1.9v4.4h5.6v1.6h-5.6v9.2h5.6zm15 0h-1.3q-1.1 0-1.6-0.6-0.5-0.6-0.6-1.4h-0.1q-0.5 1-1.4 1.7-0.9 0.6-2.4 0.6-1.9 0-3.1-1.1-1.1-1-1.1-2.7 0-1.7 1.2-2.7 1.3-0.9 4.1-0.9h2.7v-1.2q0-1.4-0.8-2.1-0.8-0.7-2.2-0.7-1.2 0-2 0.5-0.8 0.5-1.3 1.4l-1.3-1q0.2-0.5 0.6-0.9 0.4-0.5 1-0.8 0.6-0.4 1.4-0.6 0.8-0.2 1.7-0.2 2.2 0 3.5 1.1 1.3 1.1 1.3 3.1v6.8h1.7zm-7-1.3q0.7 0 1.3-0.2 0.6-0.2 1.1-0.5 0.4-0.3 0.7-0.7 0.3-0.4 0.3-0.9v-2.1h-2.7q-1.7 0-2.5 0.5-0.8 0.5-0.8 1.4v0.5q0 1 0.7 1.5 0.7 0.5 1.9 0.5zm10 1.3v-1.6h3.7v-9.2h-3.7v-1.6h5.6v3.1h0.1q0.4-1.4 1.5-2.3 1-0.8 2.7-0.8h1.7v1.9h-2.3q-1.7 0-2.7 1-1 0.9-1 2.5v5.4h4.8v1.6z' fill='%234491d7'/%3E%3C/svg%3E");
+}
+
+.card-img__media::before{
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.2' viewBox='0 0 33 27' width='33' height='27'%3E%3Cpath d='m5 22l7.5-10 3 3 4-6 8.5 13z' fill='%234491d7'/%3E%3Cpath d='m8 11c-1.7 0-3-1.3-3-3 0-1.7 1.3-3 3-3 1.7 0 3 1.3 3 3 0 1.7-1.3 3-3 3z' fill='%234491d7'/%3E%3Cpath d='m1 1h31v25h-31z' stroke='%234491d7' stroke-width='2' stroke-miterlimit='100' fill='none'/%3E%3C/svg%3E");
+}
+
+.card-img__www::before{
+  background-image: url("data:image/svg+xml,%3Csvg version='1.2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 39 39' width='39' height='39'%3E%3Cstyle%3E.a%7Bfill:none;stroke:%234491d7;stroke-linecap:square;stroke-linejoin:round;stroke-width:1.5%7D.b%7Bfill:none;stroke:%234491d7;stroke-linecap:square;stroke-linejoin:round%7D%3C/style%3E%3Cpath fill-rule='evenodd' class='a' d='m19.5 38c-10.2 0-18.5-8.3-18.5-18.5 0-10.2 8.3-18.5 18.5-18.5 10.2 0 18.5 8.3 18.5 18.5 0 10.2-8.3 18.5-18.5 18.5z'/%3E%3Cpath fill-rule='evenodd' class='a' d='m19.5 38c-5.8 0-10.5-8.3-10.5-18.5 0-10.2 4.7-18.5 10.5-18.5 5.8 0 10.5 8.3 10.5 18.5 0 10.2-4.7 18.5-10.5 18.5z'/%3E%3Cpath fill-rule='evenodd' class='b' d='m5 31h29z'/%3E%3Cpath fill-rule='evenodd' class='b' d='m5 8h29z'/%3E%3Cpath fill-rule='evenodd' class='a' d='m1 19h37v1h-37z'/%3E%3Cpath fill-rule='evenodd' class='a' d='m19 1h1v37h-1z'/%3E%3C/svg%3E");
+}
+
+@keyframes flower-inner-rotation{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(-360deg);
+  }
 }
