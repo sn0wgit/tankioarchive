@@ -11,6 +11,7 @@
     "explorer": {
         "name": "Name",
         "type": "Type",
-        "actions": "Actions"
+        "actions": "Actions",
+        "folder": "Folder"
     }
 }

@@ -11,6 +11,7 @@
     "explorer": {
         "name": "Имя",
         "type": "Тип",
-        "actions": "Действия"
+        "actions": "Действия",
+        "folder": "Папка"
     }
 }
