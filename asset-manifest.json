@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tankioarchive/static/css/main.3f20e7d0.css",
-    "main.js": "/tankioarchive/static/js/main.f3730432.js",
+    "main.css": "/tankioarchive/static/css/main.79da6717.css",
+    "main.js": "/tankioarchive/static/js/main.66feec57.js",
     "static/js/453.336c40dc.chunk.js": "/tankioarchive/static/js/453.336c40dc.chunk.js",
     "static/media/NEXT ART_Heavy.otf": "/tankioarchive/static/media/NEXT ART_Heavy.f104749ca9f3a2dbbeae.otf",
     "index.html": "/tankioarchive/index.html",
     "static/media/getFetch.cjs": "/tankioarchive/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.3f20e7d0.css.map": "/tankioarchive/static/css/main.3f20e7d0.css.map",
-    "main.f3730432.js.map": "/tankioarchive/static/js/main.f3730432.js.map",
+    "main.79da6717.css.map": "/tankioarchive/static/css/main.79da6717.css.map",
+    "main.66feec57.js.map": "/tankioarchive/static/js/main.66feec57.js.map",
     "453.336c40dc.chunk.js.map": "/tankioarchive/static/js/453.336c40dc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f20e7d0.css",
-    "static/js/main.f3730432.js"
+    "static/css/main.79da6717.css",
+    "static/js/main.66feec57.js"
   ]
 }
