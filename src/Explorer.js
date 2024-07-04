@@ -7,7 +7,13 @@ function Explorer() {
     const { t, i18n } = useTranslation();
     const location = useLocation();
     const { pathname } = location;
-    i18n.loadNamespaces(pathname.replace("tankioarchive/", "").substring(1));
+    let namespace = ""
+    if (pathname.endsWith("/")){
+        namespace = pathname.replace("tankioarchive/", "").substring(1).slice(0, -1)
+    } else{
+        namespace = pathname.replace("tankioarchive/", "").substring(1)
+    }
+    i18n.loadNamespaces(namespace);
     const arrangement = pathname.replace("tankioarchive/", "tankioarchive/archive/")+"/arrangement.json"
     fetch(arrangement).then(response => {
         console.log(response);
@@ -19,7 +25,7 @@ function Explorer() {
             let rowname = document.createElement("td");
             let rowtype = document.createElement("td");
             let rowactions = document.createElement("td");
-            rowname.innerText = t(itemunit.name, {ns: pathname.replace("tankioarchive/", "").substring(1)});
+            rowname.innerText = t(itemunit.name, {ns: namespace});
             rowtype.innerText = t(itemunit.type);
             if (itemunit.preview !== false) {
                 rowactions.innerHTML = `<a href=${itemunit.preview} class="preview"></a>`;
