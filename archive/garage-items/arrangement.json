@@ -1,0 +1,10 @@
+{
+    "content": [
+        {"type": "explorer.folder", "preview": false, "url":  "./turrets/",     "name": "items.turrets"},
+        {"type": "explorer.folder", "preview": false, "url":  "./turrets-old/", "name": "items.turrets-old"},
+        {"type": "explorer.folder", "preview": false, "url":  "./hulls/",       "name": "items.hulls"},
+        {"type": "explorer.folder", "preview": false, "url":  "./hulls-old/",   "name": "items.hulls-old"},
+        {"type": "explorer.folder", "preview": false, "url":  "./drones/",      "name": "items.drones"}
+    ],
+    "previous_breadcrumbs": []
+}

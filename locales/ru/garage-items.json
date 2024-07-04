@@ -1,0 +1,9 @@
+{
+    "items": {
+        "turrets": "Пушки",
+        "turrets-old": "Пушки (Old)",
+        "hulls": "Корпуса",
+        "hulls-old": "Корпуса (Old)",
+        "drones": "Дроны"
+    }
+}
