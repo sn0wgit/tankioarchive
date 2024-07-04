@@ -1,0 +1,14 @@
+{
+    "content": [
+        {"type": "folder", "preview": false, "url":  "turrets/",     "id": 1},
+        {"type": "folder", "preview": false, "url":  "turrets-old/", "id": 2},
+        {"type": "folder", "preview": false, "url":  "hulls/",       "id": 3},
+        {"type": "folder", "preview": false, "url":  "hulls-old/",   "id": 4},
+        {"type": "folder", "preview": false, "url":  "drones/",      "id": 5}
+    ],
+    "translations": {
+        "ru": "ru.json",
+        "en": "en.json"
+    },
+    "previous_breadcrumbs": []
+}

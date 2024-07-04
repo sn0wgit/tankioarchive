@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Outlet, Link } from "react-router-dom";
 function Intro() {
   const { t } = useTranslation();
 
@@ -10,23 +11,32 @@ function Intro() {
       </h2>
       <p><b>{t("intro.biggest")}</b>{t("intro.paragraph")}</p>
       <div className="cards">
-        <div className="card">
-          <div className="card-img card-img__tnk"></div>
-          <span>{t("intro.card1")}</span>
-        </div>
-        <div className="card">
-          <div className="card-img card-img__tar"></div>
-          <span>{t("intro.card2")}</span>
-        </div>
+        <Link to="./garage-items">
+          <div className="card">
+            <div className="card-img card-img__tnk"></div>
+            <span>{t("intro.card1")}</span>
+          </div>
+        </Link>
+        <Link to="./tar-libraries">
+          <div className="card">
+            <div className="card-img card-img__tar"></div>
+            <span>{t("intro.card2")}</span>
+          </div>
+        </Link>
+        <Link to="./media">
         <div className="card">
           <div className="card-img card-img__media"></div>
           <span>{t("intro.card3")}</span>
         </div>
+        </Link>
+        <Link to="./old-websites">
         <div className="card">
           <div className="card-img card-img__www"></div>
           <span>{t("intro.card4")}</span>
         </div>
+        </Link>
       </div>
+      <Outlet />
     </section>
   );
 }

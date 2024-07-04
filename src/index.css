@@ -82,6 +82,10 @@ section.intro p b {
   margin-right: auto;
 }
 
+.cards a{
+  text-decoration: unset;
+}
+
 .card{
   display: flex;
   flex-direction: column;

@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import './index.css';
 import Intro from './Intro';
 import Header from './Header';
+import Explorer from './Explorer';
 //import '@material/web/button/filled-button.js';
 //import '@material/web/button/outlined-button.js';
 //import '@material/web/checkbox/checkbox.js';
@@ -14,7 +16,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    <Intro />
+	  <BrowserRouter>
+      <Routes>
+          <Route path="tankioarchive/" element={<Intro />} />
+          <Route path="tankioarchive/*" element={<Explorer />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

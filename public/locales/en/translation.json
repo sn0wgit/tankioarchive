@@ -7,5 +7,10 @@
         "card2": "Map libraries",
         "card3": "Media",
         "card4": "Old websites"
+    },
+    "explorer": {
+        "name": "Name",
+        "type": "Type",
+        "actions": "Actions"
     }
 }
