@@ -173,3 +173,35 @@ section.intro p b {
       transform: rotate(-360deg);
   }
 }
+
+@media screen and (max-width: 1151px){
+    .cards{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-columns: repeat(3, calc(100% / 3 - 11px));
+        width: 100%;
+    }
+
+    .card{
+        width: auto;
+        aspect-ratio: unset;
+    }
+}
+
+@media screen and (max-width: 900px){
+  .cards{
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-columns: repeat(2, calc(50% - 8px));
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .cards{
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-columns: 100%;
+      width: 100%;
+  }
+}
