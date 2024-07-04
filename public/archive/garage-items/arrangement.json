@@ -1,10 +1,10 @@
 {
     "content": [
-        {"type": "folder", "preview": false, "url":  "turrets/",     "name": "items.1"},
-        {"type": "folder", "preview": false, "url":  "turrets-old/", "name": "items.2"},
-        {"type": "folder", "preview": false, "url":  "hulls/",       "name": "items.3"},
-        {"type": "folder", "preview": false, "url":  "hulls-old/",   "name": "items.4"},
-        {"type": "folder", "preview": false, "url":  "drones/",      "name": "items.5"}
+        {"type": "explorer.folder", "preview": false, "url":  "turrets/",     "name": "items.turrets"},
+        {"type": "explorer.folder", "preview": false, "url":  "turrets-old/", "name": "items.turrets-old"},
+        {"type": "explorer.folder", "preview": false, "url":  "hulls/",       "name": "items.hulls"},
+        {"type": "explorer.folder", "preview": false, "url":  "hulls-old/",   "name": "items.hulls-old"},
+        {"type": "explorer.folder", "preview": false, "url":  "drones/",      "name": "items.drones"}
     ],
     "previous_breadcrumbs": []
 }

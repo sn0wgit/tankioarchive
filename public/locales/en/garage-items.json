@@ -1,9 +1,9 @@
 {
     "items": {
-        "1": "Turrets",
-        "2": "Turrets (Old)",
-        "3": "Hulls",
-        "4": "Hulls (Old)",
-        "5": "Drones"
+        "turrets": "Turrets",
+        "turrets-old": "Turrets (Old)",
+        "hulls": "Hulls",
+        "hulls-old": "Hulls (Old)",
+        "drones": "Drones"
     }
 }
