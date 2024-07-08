@@ -11,18 +11,40 @@ section.explorer:not(.active)>:not(div) {
 }
 
 div.window {
+    background: #c1dbf2;
+    border: 15px solid #c1dbf2;
+    border-radius: 20px;
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
-    background: #c1dbf2;
-    width: calc(100% - 30px);
     height: 100%;
-    border: 15px solid #c1dbf2;
-    border-radius: 20px;
+    max-height: calc(100dvh - 8rem);
     position: relative;
+    width: calc(100% - 30px);
+    overflow-y: auto;
+    padding-right: 6px;
 }
 
-main.explorer.active div.window{
+@supports not (scrollbar-width: thin){
+    div.window::-webkit-scrollbar {
+        background: unset;
+        width: 10px;
+    }
+    
+    div.window::-webkit-scrollbar-thumb {
+        background: #a1c8eb;
+        border-radius: 99px;
+    }    
+}
+
+@supports (scrollbar-width: thin){
+    div.window {
+        scrollbar-width: thin;
+        scrollbar-color: #a1c8eb #c1dbf2;
+    }    
+}
+
+section.explorer.active div.window{ /*на будущее для предпросмотра*/
     width: calc((100% - 50px) * 0.7);
 }
 

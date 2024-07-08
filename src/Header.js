@@ -3,10 +3,10 @@ import { useTranslation } from 'react-i18next';
 function Header() {
   const { i18n } = useTranslation();
   const changelanguage = () => {
-    if (localStorage.getItem("i18nextLng") === "ru-RU"){
+    if (localStorage.getItem("i18nextLng") === "ru"){
       i18n.changeLanguage("en");
     } else {
-      i18n.changeLanguage("ru-RU");
+      i18n.changeLanguage("ru");
     }
   }
 

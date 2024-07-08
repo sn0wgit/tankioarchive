@@ -8,7 +8,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next) 
   .init({
-    fallbackLng: 'en', 
+    fallbackLng: ["en", "ru"],
     debug: true, 
       backend: {
         loadPath: "/tankioarchive/locales/{{lng}}/{{ns}}.json",
