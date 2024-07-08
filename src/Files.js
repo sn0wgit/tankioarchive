@@ -1,11 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
-
-function loadNamespace(namespace) {
-    const { i18n } = useTranslation();
-    i18n.loadNamespaces(namespace);
-    return "Namespace "+namespace+" is loaded!"
-}
+import { useLoadNamespace } from './useLoadNamespace';
 
 function importFileEntries(EntriesPath, namespace){
     const { t } = useTranslation();
@@ -48,7 +43,7 @@ function Files(){
         namespace = namespace.slice(0, -1)
     }
     const arrangement = pathname.replace("tankioarchive/", "tankioarchive/archive/")+"/arrangement.json"
-    console.log(loadNamespace(namespace));
+    console.log(useLoadNamespace(namespace));
     importFileEntries(arrangement, namespace);
     return (
         <div className="window">

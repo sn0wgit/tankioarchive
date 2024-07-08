@@ -15,6 +15,10 @@ body {
   color: #1f1f1f;
 }
 
+body>div#root{
+  display: contents;
+}
+
 header{
   display: flex;
   justify-content: space-between;
