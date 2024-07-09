@@ -9,7 +9,6 @@ import Explorer from './Explorer';
 //import '@material/web/button/outlined-button.js';
 //import '@material/web/checkbox/checkbox.js';
 import reportWebVitals from './reportWebVitals';
-
 import './i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

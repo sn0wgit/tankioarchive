@@ -7,13 +7,11 @@ function Files(){
     const { t } = useTranslation();
     const location = useLocation();
     const { pathname } = location;
-    let namespace = pathname.replace("tankioarchive/", "").substring(1)
-    if (pathname.endsWith("/")){
-        namespace = namespace.slice(0, -1)
-    }
+    const namespace = pathname.endsWith("/") ? pathname.replace("tankioarchive/", "").substring(1).slice(0, -1) : pathname.replace("tankioarchive/", "").substring(1)
+    console.log(namespace)
     const arrangement = pathname.replace("tankioarchive/", "tankioarchive/archive/")+"/arrangement.json"
     console.log(useLoadNamespace(namespace));
-    useImportFileEntries(arrangement, namespace);
+    useImportFileEntries(arrangement, namespace)
     return (
         <div className="window">
             <table className="files">
