@@ -1,0 +1,14 @@
+{
+    "content": [
+        {"type": "explorer.folder", "preview": false, "url":  "./3rd-library-increased/", "name": "items.3rd-library-increased"},
+        {"type": "explorer.folder", "preview": false, "url":  "./3rd-library-old-1/",     "name": "items.3rd-library-old-1"},
+        {"type": "explorer.folder", "preview": false, "url":  "./3rd-library/",           "name": "items.3rd-library"},
+        {"type": "explorer.folder", "preview": false, "url":  "./winter/",                "name": "items.winter"},
+        {"type": "explorer.folder", "preview": false, "url":  "./tutorial-library/",      "name": "items.tutorial-library"},
+        {"type": "explorer.folder", "preview": false, "url":  "./summer/",                "name": "items.summer"},
+        {"type": "explorer.folder", "preview": false, "url":  "./iran/",                  "name": "items.iran"},
+        {"type": "explorer.folder", "preview": false, "url":  "./event/",                 "name": "items.event"},
+        {"type": "explorer.folder", "preview": false, "url":  "./build-old-1/",           "name": "items.builds-old-1"}
+    ],
+    "previous_breadcrumbs": []
+}
