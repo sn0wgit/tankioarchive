@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 function useImportFileEntries(EntriesPath, namespace){
     const { t } = useTranslation();
     fetch(EntriesPath).then(response => {
+        document.querySelector("div.window table.files tbody").innerHTML = ""
         return response.json();
     }).then(data => {
         data.content.forEach((itemunit) => {
@@ -24,8 +25,10 @@ function useImportFileEntries(EntriesPath, namespace){
             else {
                 rowactions.innerHTML += `<a href=${itemunit.url} class="download" download="true"></a>`;
             }
-            document.querySelector("tbody").appendChild(newrow);
+            document.querySelector("div.window table.files tbody").appendChild(newrow);
         })
+    }).then(() => {
+        console.log("Data Loaded");
     }).catch(err => {
         console.log("Error Reading data " + err);
     })
