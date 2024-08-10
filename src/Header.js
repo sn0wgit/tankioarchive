@@ -13,7 +13,7 @@ function Header() {
   return (
     <header>
       <a href="/tankioarchive">TO#A</a>
-      <button className="setlanguage" onClick={changelanguage}>QЯ</button>
+      <button aria-label='Change language' className="setlanguage" onClick={changelanguage}>QЯ</button>
     </header>
   );
 }

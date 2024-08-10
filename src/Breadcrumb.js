@@ -1,6 +1,6 @@
 function Breadcrumb(){
     return (
-        <div className="breadcrumb">
+        <div className="breadcrumbs">
         </div>
     );
 }
