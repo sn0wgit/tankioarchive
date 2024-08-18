@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/tankioarchive/static/css/main.89d8e226.css",
-    "main.js": "/tankioarchive/static/js/main.fd4412c9.js",
+    "main.js": "/tankioarchive/static/js/main.be9e54f7.js",
     "static/js/453.336c40dc.chunk.js": "/tankioarchive/static/js/453.336c40dc.chunk.js",
     "static/media/NEXT ART_Heavy.otf": "/tankioarchive/static/media/NEXT ART_Heavy.f104749ca9f3a2dbbeae.otf",
     "index.html": "/tankioarchive/index.html",
     "static/media/getFetch.cjs": "/tankioarchive/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "main.89d8e226.css.map": "/tankioarchive/static/css/main.89d8e226.css.map",
-    "main.fd4412c9.js.map": "/tankioarchive/static/js/main.fd4412c9.js.map",
+    "main.be9e54f7.js.map": "/tankioarchive/static/js/main.be9e54f7.js.map",
     "453.336c40dc.chunk.js.map": "/tankioarchive/static/js/453.336c40dc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89d8e226.css",
-    "static/js/main.fd4412c9.js"
+    "static/js/main.be9e54f7.js"
   ]
 }
